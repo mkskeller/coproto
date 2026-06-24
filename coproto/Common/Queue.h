@@ -150,7 +150,7 @@ namespace coproto
 			}
 
 
-			bool operator==(const std::nullptr_t& o) const
+			bool operator==(const std::nullptr_t&) const
 			{
 				return mBlock == nullptr;
 			}

@@ -131,7 +131,7 @@ namespace coproto
 		template<typename OTHER>
 		enable_if_t<std::is_trivial<OTHER>::value == false && 
 			is_trivial_container<OTHER>::value == false, span<u8>>
-			asSpan(OTHER& container)
+			asSpan(OTHER&)
 		{
 			static_assert(
 				std::is_trivial<OTHER>::value ||
