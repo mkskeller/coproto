@@ -58,7 +58,7 @@ namespace coproto
 	using error_code = std::error_code;
 
 
-	static const std::error_category& coproto_cat = error_code(code{}).category();
+//	static const std::error_category& coproto_cat = error_code(code{}).category();
 
 	error_code make_error_code(code e);
 

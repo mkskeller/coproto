@@ -86,7 +86,7 @@ namespace coproto::internal
 			}
 		}
 
-		void addFlush(std::shared_ptr<FlushToken>& t, Lock& l)
+		void addFlush(std::shared_ptr<FlushToken>& t, Lock&)
 		{
 			mFlushes.push_back(t);
 		}

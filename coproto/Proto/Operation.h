@@ -109,7 +109,7 @@ namespace coproto
 		enable_if_t<
 			!has_size_member_func<Container>::value&&
 			std::is_trivial<Container>::value, u64>
-			u8Size(Container& cont)
+			u8Size(Container&)
 		{
 			return sizeof(Container);
 		}

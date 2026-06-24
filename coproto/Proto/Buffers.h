@@ -321,14 +321,14 @@ namespace coproto
 
 #ifdef COPROTO_CPP20
 			template<typename promise>
-			std::coroutine_handle<> await_suspend(std::coroutine_handle<promise> h, std::source_location loc = std::source_location::current())
+			std::coroutine_handle<> await_suspend(std::coroutine_handle<promise> h, std::source_location = std::source_location::current())
 			{
 				this->mSock->send(this->mId, getBuffer(), macoro::noop_coroutine(), std::move(this->mToken)).resume();
 				return h;
 			}
 #endif
 			template<typename promise>
-			coroutine_handle<> await_suspend(coroutine_handle<promise> h, std::source_location loc = std::source_location::current())
+			coroutine_handle<> await_suspend(coroutine_handle<promise> h, std::source_location = std::source_location::current())
 			{
 				this->mSock->send(this->mId, getBuffer(), macoro::noop_coroutine(), std::move(this->mToken)).resume();
 				return h;

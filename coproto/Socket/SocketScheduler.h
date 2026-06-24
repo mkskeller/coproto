@@ -77,7 +77,7 @@ namespace coproto
 				return ret;
 			}
 
-			void setType(Type t) {};
+			void setType(Type) {};
 			void setSessionID(const SessionID& id) {
 				std::memcpy(data.data(), id.mVal, 16);
 			}
