@@ -1,10 +1,10 @@
 
-set(GIT_REPOSITORY      "https://github.com/ladnir/macoro.git")
+set(GIT_REPOSITORY      "https://github.com/mkskeller/macoro.git")
 
 if(DEFINED MACORO_GIT_TAG)
     set(GIT_TAG ${MACORO_GIT_TAG})
 else()
-    set(GIT_TAG "6869ffa31f9e94211815f9fc3921d2a924ab8646" )
+    set(GIT_TAG "348447999c98ce6ae95ab71b2c8c0efe8d211f97" )
 endif()
 
 set(CLONE_DIR "${COPROTO_THIRDPARTY_CLONE_DIR}/macoro")
