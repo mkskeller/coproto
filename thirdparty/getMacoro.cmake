@@ -4,7 +4,7 @@ set(GIT_REPOSITORY      "https://github.com/mkskeller/macoro.git")
 if(DEFINED MACORO_GIT_TAG)
     set(GIT_TAG ${MACORO_GIT_TAG})
 else()
-    set(GIT_TAG "91fc6b42ff719c681713c6d9f7476b94fd822983" )
+    set(GIT_TAG "ee5fa61a9bc2e4cd4cdddea8d4a6485332e8d58e" )
 endif()
 
 set(CLONE_DIR "${COPROTO_THIRDPARTY_CLONE_DIR}/macoro")
